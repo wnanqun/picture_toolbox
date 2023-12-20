@@ -15,14 +15,14 @@
 ### 运行要求:
 python运行版本: 3.9 
 #### 模块:
-pip install opencv-contrib-python==4.7.0.72
-pip install opencv-python==4.7.0.72 
-pip install transformers 4.28.1
-pip install scipy-1.11.4
-pip install diffusers==0.24.0
-pip install torch==1.9.0
-pip install torchvision==0.10.0
-pip install Pillow==8.4.0
+###### pip install opencv-contrib-python==4.7.0.72
+###### pip install opencv-python==4.7.0.72 
+###### pip install transformers 4.28.1
+###### pip install scipy-1.11.4
+###### pip install diffusers==0.24.0
+###### pip install torch==1.9.0
+###### pip install torchvision==0.10.0
+###### pip install Pillow==8.4.0
 
 #### 图片识别和生成需要下载以下两个文件并放到指定文件夹中
 图片识别:   链接
