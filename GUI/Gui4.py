@@ -1,5 +1,6 @@
 from tkinter import filedialog,messagebox,Menu
 import tkinter as tk
+import time
 from PIL import Image,ImageTk
 from GUI.Global_control import root,frame,img,clear,set_file_path,get_file_path,get_save_path,set_save_path
 from tools import Generate_image
@@ -20,18 +21,18 @@ def gui4():
             global describe_text
             describe_text=input1.get(1.0,tk.END)
             if describe_text:
+                clear()
+                label2=tk.Label(frame,text="加载中，请耐心等待!",font=("黑体",20))
+                label2.place(relx=0.25,rely=0.25,relwidth=0.5,relheight=0.5)
                 show_img()
             else:
                 messagebox.showinfo("Message_title", "请输入描述文本！")
         bt.config(command=calc2)
     def show_img():
-        clear()
-        label2=tk.Label(frame,text="加载中，请耐心等待!",font=("黑体",20))
-        label2.place(relx=0.25,rely=0.25,relwidth=0.5,relheight=0.5)
         global img
         global describe_text
-        img=Generate_image(describe_text)
-        label2.destroy()
+        img=Generate_image.run(describe_text)
+        clear()
         w,h = img.size 
         max1=400
         if(w>max1 or h>max1):
