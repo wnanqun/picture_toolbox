@@ -26,9 +26,9 @@ pip install Pillow==8.4.0
 
 #### 图片识别和生成需要下载以下两个文件并放到指定文件夹中
 图片识别:   链接
--将文件放到 "./models/"   下
+-将文件放到 "https://pan.quark.cn/s/14670f3478fb"   下
 图片生成:   链接
--将文件放到 "./models/"   下
+-将文件放到 "https://pan.quark.cn/s/1d253ce47f41"   下
 
 
 ### 注意:
